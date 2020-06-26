@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<title>Kai's Portfolio</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./assets/style/style.css">
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
+        onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="w3-bar-item w3-button">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    </div>
+  </div>
+
+  <!-- First Parallax Image with Logo Text -->
+  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <img src="./assets/images/Logo_img/logo.png" id="logo" alt="">
+    </div>
+  </div>
+
+  <!-- Container (About Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="about">
+    <h3 class="w3-center">ABOUT ME</h3>
+    <p class="w3-center"><em>Hi there!</em></p>
+    <p>I'm a Tech Support & Freelance Web Designer from Seattle
+      (Washington, US) currently based in Shoreline. I love everything
+      that has to do with Web design & development, Server design,
+      Graphic design, CGI and I feel a true devotion for clean code.</p>
+    <div class="w3-row">
+      <div class="w3-col m6 w3-center" id="about-pic">
+        <p><b><i class="fa fa-user w3-margin-right" id="bio-name"></i>Kai Richardson</b></p><br>
+        <img src="./assets/images/Logo_img/my-face-forward-sq.png" class="w3-round w3-image" alt="Photo of Me">
+        <img src="./assets/images/Logo_img/my-face-smile-sq.png" class="w3-round w3-image" alt="Photo of Me">
+      </div>
+
+      <!-- Hide this text on small devices -->
+      <div class="w3-col m6 w3-hide-small" id="bio-2">
+        <p> I have 3 years of experience working as a Tech Support agent
+          focused on providing an optimal customer experience for a local
+          videogame company, and am ready to expand my career to a more
+          web centric environment! I love working with people, especially if
+          they have the same passion I have for what they do. </p>
+      </div>
+    </div>
+
+    <!-- PIE CHART -->
+    <div class="w3-row w3-center w3-padding-16" id="chart_box">
+
+      <div class="w3-half w3-section chart">
+        <p class="w3-large w3-center">I'm good at:</p>
+        <canvas id="good_at"></canvas>
+      </div>
+
+      <div class="w3-half w3-section chart">
+        <p class="w3-large w3-center">I'm learning:</p>
+        <canvas id="learning"></canvas>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">370+</span><br>
+      Git Contributions
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">25+</span><br>
+      Repositories
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">1000+</span><br>
+      Hours of Coding
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">3+</span><br>
+      Years in the Tech Industry
+    </div>
+  </div>
+
+  <!-- Second Parallax Image with Portfolio Text -->
+  <div class="bgimg-2 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+    </div>
+  </div>
+
+  <!-- Container (Portfolio Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center">MY WORK</h3>
+    <p class="w3-center"><em>Here are some of my latest projects.<br> Each image contains a link to its page and to its
+        git repo</em></p><br>
+
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class=" w3-center">
+      <div class="w3-col m3 container">
+        <div class="proj_name">Dart Throw</div>
+        <img src="./assets/images/Port_img/dart_throw.gif" alt="Dart Throw">
+        <div class="middle">
+          <div class="btn"
+            onclick="window.open('','_new').location.href='https://kairichardson.github.io/Project-1_Dart-Throw/'">Page
+          </div>
+          <div class="btn"
+            onclick="window.open('','_new').location.href='https://github.com/KaiRichardson/Project-1_Dart-Throw'">
+            Github</div>
+        </div>
+      </div>
+
+      <div class="w3-col m3 container">
+        <div class="proj_name">Pocket Advisor</div>
+        <img src="./assets/images/Port_img/poket_advisor.gif" alt="Pocket Advisor">
+        <div class="middle">
+          <div class="btn" onclick="window.open('','_new').location.href='https://frozen-spire-30925.herokuapp.com/'">
+            Page</div>
+          <div class="btn" onclick="window.open('','_new').location.href='https://github.com/KaiRichardson/project2_5'">
+            Github</div>
+        </div>
+      </div>
+
+      <div class="w3-col m3 container">
+        <div class="proj_name">Burger Builder</div>
+        <img src="./assets/images/Port_img/UtFj.gif" alt="Burger Builder">
+        <div class="middle">
+          <div class="btn" onclick="window.open('','_new').location.href='https://gentle-eyrie-40570.herokuapp.com/'">
+            Page</div>
+          <div class="btn"
+            onclick="window.open('','_new').location.href='https://github.com/KaiRichardson/Burger_Maker'">Github</div>
+        </div>
+      </div>
+
+      <div class="w3-col m3 container">
+        <div class="proj_name">Liri Bot</div>
+        <img src="./assets/images/Port_img/ai.gif" alt="Liri Bot">
+        <div class="middle">
+          <div class="btn" onclick="window.open('','_new').location.href='https://kairichardson.github.io/LIRI-bot/'">
+            Page</div>
+          <div class="btn" onclick="window.open('','_new').location.href='https://github.com/KaiRichardson/LIRI-bot'">
+            Github</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-center">
+      <div class="w3-col m3 container">
+        <div class="proj_name">Giphy Depo</div>
+        <img src="./assets/images/Port_img/giphy.gif" alt="Giphy Depo">
+        <div class="middle">
+          <div class="btn" onclick="window.open('','_new').location.href='https://kairichardson.github.io/giphy_depo/'">
+            Page</div>
+          <div class="btn" onclick="window.open('','_new').location.href='https://github.com/KaiRichardson/giphy_depo'">
+            Github</div>
+        </div>
+      </div>
+
+      <div class="w3-col m3 container">
+        <div class="proj_name">Trivia Time</div>
+        <img src="./assets/images/Port_img/trivia.gif" alt="Trivia Game">
+        <div class="middle">
+          <div class="btn" onclick="window.open('','_new').location.href='https://kairichardson.github.io/TriviaGame/'">
+            Page</div>
+          <div class="btn" onclick="window.open('','_new').location.href='https://github.com/KaiRichardson/TriviaGame'">
+            Github</div>
+        </div>
+      </div>
+
+      <div class="w3-col m3 container">
+        <div class="proj_name">Word Guess</div>
+        <img src="./assets/images/Port_img/word_guess.gif" alt="Word Guess Game">
+        <div class="middle">
+          <div class="btn"
+            onclick="window.open('','_new').location.href='https://kairichardson.github.io/Word-Guess-Game/'">Page</div>
+          <div class="btn"
+            onclick="window.open('','_new').location.href='https://github.com/KaiRichardson/Word-Guess-Game'">Github
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-col m3 container">
+        <div class="proj_name">Bamozon</div>
+        <img src="./assets/images/Port_img/bamozon.gif" alt="Bamozon">
+        <div class="middle">
+          <div class="btn" onclick="window.open('','_new').location.href='https://kairichardson.github.io/Bamozon/'">
+            Page</div>
+          <div class="btn" onclick="window.open('','_new').location.href='https://github.com/KaiRichardson/Bamozon'">
+            Github</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Third Parallax Image with Portfolio Text -->
+  <div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+    </div>
+  </div>
+
+  <!-- Container (Contact Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="contact">
+    <h3 class="w3-center">GET A HOLD OF ME</h3>
+    <p class="w3-center"><em>I'd love to hear from you!</em></p>
+
+    <div class="w3-row w3-padding-32 w3-section">
+      <div class="w3-col m4 w3-container">
+        <img src="./assets/images/Logo_img/kai_snap.jpg" class="w3-image w3-round">
+      </div>
+      <div class="w3-col m8 w3-panel">
+        <div class="w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Seattle, US<br>
+          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +1 (206) 702-3924<br>
+          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
+          kairichardson2000@gmail.com<br>
+        </div>
+        <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-right w3-section" type="submit">
+            <i class="fa fa-paper-plane"></i> <a href="mailto:kairichardson2000@gmail.com?subject=Hello%20again"
+              id="send">SEND MESSAGE</a>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <i class="fa fa-facebook-official perf-links"
+        onclick="window.open('','_new').location.href='https://www.facebook.com/stealymonkey'"></i>
+      <i class="fa fa-instagram perf-links"
+        onclick="window.open('','_new').location.href='https://www.instagram.com/kai_the_pie_guy/'"></i>
+      <i class="fa fa-twitter perf-links"
+        onclick="window.open('','_new').location.href='https://twitter.com/stealymonkey'"></i>
+      <i class="fa fa-linkedin perf-links"
+        onclick="window.open('','_new').location.href='https://www.linkedin.com/in/kai-richardson/'"></i>
+      <i class="fa fa-youtube perf-links"
+        onclick="window.open('','_new').location.href='https://www.youtube.com/channel/UCxuE-w3xE043avMx78uIXUw?view_as=public'"></i>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

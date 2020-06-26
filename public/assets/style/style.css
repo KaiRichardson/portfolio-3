@@ -1,0 +1,212 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  color: rgb(138, 138, 138);
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.w3-wide {
+  letter-spacing: 10px;
+}
+
+/************** NAV BAR **************/
+
+.w3-bar-item {
+  color: rgb(107, 107, 107);
+}
+
+/************** HOME **************/
+
+#logo {
+  height: 30vw;
+  min-height: 100px;
+}
+
+/* Home Div Img */
+.bgimg-1 {
+  background-image: url("../images/Parallax_img/Top_Tower.png");
+  height: 100vh;
+  opacity: 50%;
+}
+
+/************** ABOUT **************/
+
+#about-pic {
+  position: relative;
+  margin: 0 auto;
+  width: 300px;
+  opacity: 0.8;
+}
+
+#about-pic img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#about-pic img:hover {
+  opacity: 0;
+  cursor: grab;
+}
+
+#about-pic img:active {
+  cursor: grabbing;
+}
+
+#bio-name {
+  margin-bottom: 0;
+}
+
+#bio-2 p {
+  margin: 50px;
+  /* right: 50%; */
+}
+
+/************** PORTFOLIO **************/
+
+/* Portfolio Div Img */
+.bgimg-2 {
+  background-image: url("../images/Parallax_img/Dog.jpg");
+  min-height: 400px;
+}
+
+.container {
+  position: relative;
+  opacity: 0.8;
+  padding: 0 10px;
+}
+
+img {
+  transition: 0.3s ease;
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.middle {
+  opacity: 0;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.container:hover img {
+  opacity: 0.5;
+  transition: 0.3s ease;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.container:hover .proj_name {
+  color: black;
+  transition: 0.2s ease;
+}
+
+.btn {
+  background-color: rgb(139, 139, 139);
+  opacity: 0.8;
+  color: black;
+  font-size: 16px;
+  width: 80px;
+  height: 30px;
+  margin: 10px;
+  border-radius: 5px;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  transition: 0.2s ease;
+  filter: drop-shadow(0 0 0.75rem rgb(255, 49, 49));
+  cursor: pointer;
+}
+.btn:active {
+  transition: 0.2s ease;
+  filter: none;
+  background-color: rgb(238, 116, 116);
+}
+
+.proj_name {
+  font-size: 20px;
+  transform: rotate(-90deg);
+  position: relative;
+  color: rgb(206, 206, 206);
+  top: 95px;
+  left: 40%;
+  transition: 0.2s ease;
+}
+
+/************** CONTACT **************/
+
+/* Contact Div Img */
+.bgimg-3 {
+  background-image: url("../images/Parallax_img/Wave's.jpg");
+  min-height: 400px;
+}
+
+#send {
+  text-decoration: none;
+}
+
+.perf-links:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/************** PIE CHART **************/
+
+.chart {
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+}
+#chart_box {
+  margin-top: 10%;
+}
+
+/************** MEDIA Q **************/
+
+@media only screen and (max-device-width: 600px) {
+  .chart {
+    width: 100%;
+  }
+  #chart_box {
+    margin-top: 80%;
+  }
+}
+
+@media only screen and (max-device-width: 900px) {
+  /* Turn off parallax scrolling for tablets and phones */
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+

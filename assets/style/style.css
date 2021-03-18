@@ -166,6 +166,11 @@ img {
   transition: 0.2s ease;
 }
 
+.notice {
+  margin-top: 0px;
+  font-size: 17px;
+}
+
 /************** CONTACT **************/
 
 /* Contact Div Img */
